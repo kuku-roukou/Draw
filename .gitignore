@@ -1,0 +1,263 @@
+## Игнорировать временные файлы Visual Studio, результаты сборки и
+## файлы, созданные популярными надстройками Visual Studio.
+
+###################
+# скомпилированный исходный код #
+###################
+* .com
+*.класс
+* .dll
+*.исполняемый
+* .pdb
+* .dll.config
+* .cache
+* .suo
+# Включать dll, если они находятся в каталоге пакетов NuGet
+! / пакеты / * / библиотека / *. dll
+# Включить библиотеки DLL, если они находятся в каталоге CommonReferences
+! * CommonReferences / *. Dll
+####################
+# VS Обновление материала #
+####################
+_UpgradeReport_Files /
+###############
+# Каталоги #
+###############
+bin /
+obj /
+Результаты теста/
+###################
+# Журнал веб-публикации #
+###################
+* .Publish.xml
+#############
+# Resharper #
+#############
+/_ReSharper.*
+* .ReSharper. *
+############
+# Пакеты #
+############
+# лучше распаковать эти файлы и зафиксировать исходный код
+# git имеет собственные встроенные методы сжатия
+* .7z
+* .dmg
+* .gz
+* .iso
+* .jar
+* .rar
+* .tar
+* .zip
+#####################
+# Журналы и базы данных #
+#####################
+*.журнал
+* .sqlite
+# Файлы, созданные ОС #
+#####################
+.DS_Store?
+ehthumbs.db
+Икона?
+Thumbs.db
+
+
+# Файлы для конкретных пользователей
+* .user
+* .userosscache
+* .sln.docstates
+
+# Файлы для конкретных пользователей (MonoDevelop / Xamarin Studio)
+* .userprefs
+
+# Результаты сборки
+[Dd] ebug /
+[Dd] ebugPublic /
+[Rr] elease /
+[Rr] eleases /
+x64 /
+x86 /
+build /
+bld /
+[Bb] в /
+[Oo] bj /
+
+# Каталог кэша / опций Visual Studo 2015
+.vs /
+
+# Результаты теста MSTest
+[Tt] est [Rr] результат * /
+[Bb] uild [Ll] og. *
+
+# NUNIT
+* .VisualState.xml
+TestResult.xml
+
+# Результаты сборки проекта ATL
+[Dd] ebugPS /
+[Rr] eleasePS /
+dlldata.c
+
+# DNX
+project.lock.json
+артефакты /
+
+*_IC
+*_ПК
+* _i.h
+* .ilk
+*.мета
+* .obj
+* .pch
+* .pgc
+* .pgd
+* .rsp
+* .sbr
+* .tlb
+* .tli
+* .tlh
+* .tmp
+* .tmp_proj
+* .vspscc
+* .vssscc
+.builds
+* .pidb
+* .svclog
+* .scc
+
+# Chutzpah Тестовые файлы
+_Chutzpah *
+
+# Файлы кэша Visual C ++
+ipch /
+* .aps
+* .ncb
+* .opensdf
+* .sdf
+* .cachefile
+
+# Профилировщик Visual Studio
+* .psess
+* .vsp
+* .vspx
+
+# TFS 2012 Локальная рабочая область
+$ tf /
+
+# Набор средств автоматизации наведения
+* .gpState
+
+# ReSharper - это надстройка для программирования .NET
+_ReSharper * /
+*. [Rr] e [Ss] Harper
+* .DotSettings.user
+
+# JustCode - это надстройка для программирования .NET
+.JustCode
+
+# TeamCity - это надстройка для сборки
+_TeamCity *
+
+# DotCover - инструмент покрытия кода
+* .dotCover
+
+# NCrunch
+_NCrunch_ *
+. * кранч * .local.xml
+
+# MightyMoose
+* .мм. *
+AutoTest.Net/
+
+# Веб-инструментальные средства (sass)
+.sass-cache /
+
+# Выходная папка Installshield
+[Ee] xpress /
+
+# DocProject - надстройка генератора документации
+DocProject / buildhelp /
+DocProject / Help / *. HxT
+DocProject / Help / *. HxC
+DocProject / Help / *. Hhc
+DocProject / Help / *. Hhk
+DocProject / Help / *. Hhp
+DocProject / Help / Html2
+DocProject / Help / html
+
+# Каталог Click-Once
+публиковать/
+
+# Публикация веб-вывода
+*. [Pp] ublish.xml
+* .azurePubxml
+# TODO: закомментируйте следующую строку, если хотите проверить настройки веб-развертывания 
+# но строки подключения к базе данных (с потенциальными паролями) не будут зашифрованы
+* .pubxml
+* .publishproj
+
+# Пакеты NuGet
+* .nupkg
+# Папку пакетов можно игнорировать из-за восстановления пакета
+** / пакеты / *
+# кроме build /, который используется как цель MSBuild.
+! ** / пакеты / build /
+# Раскомментируйте, если необходимо, но обычно он будет восстановлен при необходимости
+#! ** / пакеты / repositories.config
+
+# Вывод сборки Windows Azure
+csx /
+* .build.csdef
+
+# Каталог пакетов приложений Магазина Windows
+AppPackages /
+
+# Файлы кэша Visual Studio
+# файлы с расширением .cache можно игнорировать
+*. [Cc] ache
+# но отслеживать каталоги, заканчивающиеся на .cache
+! *. [Cc] ache /
+
+# Другое
+ClientBin /
+[Ss] tyle [Cc] op. *
+~ $ *
+* ~
+* .dbmdl
+* .dbproj.schemaview
+* .pfx
+* .publishsettings
+node_modules /
+bower_components /
+orleans.codegen.cs
+
+# Проекты RIA / Silverlight
+Generated_Code /
+
+# Резервное копирование и файлы отчетов после преобразования старого файла проекта
+# к более новой версии Visual Studio. Файлы бэкапа не нужны,
+# потому что у нас есть git ;-)
+_UpgradeReport_Files /
+Резервное копирование*/
+UpgradeLog * .XML
+UpgradeLog * .htm
+
+# Файлов SQL Server
+* .mdf
+* .ldf
+
+# Проекты Business Intelligence
+* .rdl.data
+* .bim.layout
+* .bim _ *. настройки
+
+# Подделки Microsoft
+ПодделкиСборки /
+
+# Инструменты Node.js для Visual Studio
+.ntvs_analysis.dat
+
+# Журнал сборки Visual Studio 6
+* .plg
+
+# Файл параметров рабочей области Visual Studio 6
+* .opt
