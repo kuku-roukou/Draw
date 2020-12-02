@@ -39,6 +39,8 @@
             this.LabelToolbar = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ButtonBrush
@@ -143,18 +145,40 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.Location = new System.Drawing.Point(18, 542);
+            this.button1.Location = new System.Drawing.Point(18, 487);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(226, 29);
             this.button1.TabIndex = 11;
-            this.button1.Text = "Окружность";
+            this.button1.Text = "Равнобедренный треугольник";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button9.Location = new System.Drawing.Point(18, 536);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(226, 29);
+            this.button9.TabIndex = 12;
+            this.button9.Text = "N угольник по N точкам";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button10.Location = new System.Drawing.Point(20, 586);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(226, 29);
+            this.button10.TabIndex = 13;
+            this.button10.Text = "Правильный N угольник";
+            this.button10.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1449, 725);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LabelToolbar);
@@ -185,6 +209,8 @@
         private System.Windows.Forms.Label LabelToolbar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
     }
 }
 
