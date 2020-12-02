@@ -38,6 +38,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.LabelToolbar = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ButtonBrush
@@ -139,11 +140,22 @@
             this.panel1.Size = new System.Drawing.Size(1092, 664);
             this.panel1.TabIndex = 10;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button1.Location = new System.Drawing.Point(18, 542);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(226, 29);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Окружность";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1449, 725);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LabelToolbar);
             this.Controls.Add(this.button8);
@@ -172,6 +184,7 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label LabelToolbar;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
